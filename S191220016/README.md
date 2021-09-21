@@ -20,7 +20,7 @@
 
 1.测试指令：
 
-    java -jar S191220016/asciianimator.jar -f result.txt -l false -c true -fps 6
+    java -jar asciianimator.jar -f result.txt -l false -c true -fps 6
 
 2.类关系图      
     ![](http://www.plantuml.com/plantuml/png/bLE_xXCn3DxlAJB2J-eBT40LCvMAAbWGgd9tveYQIqw9Kv0A0q8W91OanC8Ji7RcUSgVjo2furwkxS8jSVp5d_tPleL7wJ3qkcgqz5wihKDm-qh4RmYrLetOMTKARMLxx_wLsrk7K_SQdJATw01NMfg8lQqozSDGrnhA1ChWi-T29flZ1YrDkcVwLt8eAHu7rMp_Ys6G3ZT4SuisneDx8HiGZvIHjOPhvHvmPRr2PSrKANkJrfilKdK9V2frW5B6qXfVIX3kR7LdgnvHQRRfCcOSo22T7YMgXabZEtgoF9NYr4uYa9PbHgZC74cGCWet_MsSUtQXSc5tu9ngWLkFben2Q-eha52EZXLo_RuOLC1oH1tmTQHY0gBB0nEQpcAwW1cRR9_rVb-gIWw1Bo6ToPzNN_ZJCQ4ZXEfXhJ4jF1aclYHCEW-q-2C3l8OcOAwc_0l4RFRc0UUT__hyzNZuLl6EN-0CqmW9uXumnWsAu5t2O7xy-E7l-n-_3p-BEC7Fvd_UVJz--LITEd4N0Sh4xWMODlJw7m00)
@@ -35,11 +35,12 @@
 
 1.修改位置：
 
-    Line.java
-    在toString的重载函数中，增加：每输出16个数字，就额外插入一个换行符
+    新增Matrix.java，Matrix类继承自Line
+    将Line类中的position改为protected
+    作为Line的子类，多一个“每行人数”的成员变量，且拥有一个不一样的toString重载，可以按照方阵输出
 
-2.类关系图
-    同任务二，不再重复粘贴
+2.类关系图  
+    ![](http://www.plantuml.com/plantuml/png/bLEnRXGn4EttArn2fFp05UX47IHG10r2aNTts5ZnsYjxV4GA50Y1G3H8Y8OVW3Pr2hxc4lWBnkknu-ME8jjuFC_pPjxpUkrHEWoZRZejlHV7rY6uYqRGDuLMgqvihEg5jhA_TtydxUduCdsCJfb1382FjJI4lMcO-c5eMmrr0sNm-GiXvvZh9YgAUwP_9QUQuabGtTcT62PITy8qUsYf7jnBsO4uKaRIUBlAFIcnNg6oPgaqPyNmlnF47i5dKWUePJoonjSIX2lHKABs5fNcRDwKZXC7SzQZHDLbKh9ZJ95FepYraGX92v_nF2PNpf0o2a_6lNZnx1-LQxi1vrGFsNgqAQYragziQgwc2VFylhgeWFKL3P2tbMsIsCzlNTD4VGHcmDDofZH9f_XIXKvhzGS0ChRuGwtt5xNoc11u2d6DUNuUmi_BWYuXF3Fx4GTyEYroKRnq7lXn50OuXouWJrE_575u-Fe1zrrTV_wwlVpMb6Um7-PRJX3Bp5ZsXy23YC5g--7zdtS_RowlghfYu-hts-_RBn-RsOW30hWJfzEDb4QmkhdwSVtfLxC6quTH_mK0)
 
 3.视频          
     冒泡排序法，因为交换次数过多，因此只将前两个妖精和任意其他两个妖精交换位置，然后排序。
