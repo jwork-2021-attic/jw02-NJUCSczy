@@ -1,7 +1,5 @@
-package W02.S191220016;
+package S191220016;
 
-import W02.S191220016.Linable;
-import W02.S191220016.Line.Position;
 
 public class Matrix extends Line{
     private int lineLength;

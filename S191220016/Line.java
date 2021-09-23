@@ -1,6 +1,5 @@
-package W02.S191220016;
+package S191220016;
 
-import W02.S191220016.Linable;
 
 
 

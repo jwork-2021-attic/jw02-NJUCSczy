@@ -1,4 +1,4 @@
-package W02.S191220016;
+package S191220016;
 
 public class Boss {
 
@@ -73,7 +73,7 @@ public class Boss {
 
         for (String step : sortSteps) {
             this.execute(step);
-            log += line.toString();
+            log += matrix.toString();
             log += "\n[frame]\n";
         }
 

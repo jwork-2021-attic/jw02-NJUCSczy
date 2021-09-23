@@ -1,4 +1,4 @@
-package W02.S191220016;
+package S191220016;
 
 public class BubbleSorter implements Sorter {
 

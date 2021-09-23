@@ -1,4 +1,4 @@
-package W02.S191220016;
+package S191220016;
 
 import java.util.LinkedList;
 
