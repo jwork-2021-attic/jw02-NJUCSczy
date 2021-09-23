@@ -21,35 +21,6 @@ public class QuickSorter implements Sorter {
 
     private String plan = "";
 
-    private void part_sort(int x,int y){
-        if(x>=y)
-            return;
-        int i=x,j=y;
-        int flag=x;
-        while(i<j){
-            while(i<=j){
-                if(j!=flag&&a[j]<=a[flag]){
-                    swap(flag, j);
-                    flag=j;
-                    break;
-                }
-                else
-                    j--;
-            }
-            while(i<=j){
-                if(i!=flag&&a[i]>=a[flag]){
-                    swap(flag,i);
-                    flag=i;
-                    break;
-                }
-                else
-                    i++;
-            }
-        }
-        part_sort(x, flag-1);
-        part_sort(flag+1, y);
-    }
-
     @Override
     public void sort() {
         LinkedList<int[]> stack = new LinkedList<>();
