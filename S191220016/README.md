@@ -23,13 +23,15 @@
     java -jar asciianimator.jar -f result.txt -l false -c true -fps 6
 
 2.类关系图      
-    ![](http://www.plantuml.com/plantuml/png/dLBFwXCn4BxlK-IeXRv03r8yMwWKlOX8TdTSGxF9aaogK3s8A88NGRpu15vxzddgdxSmwMIwsPPUVdlPoNp9DzytCqkFqc7eTTLewRtOM8VWzfM8tn1ghHgniweLsihstlshjBSEf-aDEcKwqG6kjJGHUrTbweUXhZMK1PJ1Py-5J36_6xGqwPpfNykXf7WSLBEz8qEy2kwbR40yKaRM6gvDUi2rzGgLDLDJd1NTZHj9I0AVIXsWLBoonfTgXJj7tJcgHrIQRJgC5GSAo997YQfXqkYyfyYJ5ATs4e6yh392ClDBWfHH-AA_XLFFBbmkxGwSKormbz5IK7XDVONzH7rKoFhzE9CX8D7IiGC-ZbHCG7HvO4BJlvWkOCOcYsQztvUkKaBWAqZ_bCzRBlpfDw4ZXFImrrWMdWoJN38cdGVQyP41ta0JCAif5rxCvsyVSDt5xo_VZeVl5Q_p1SumZP0WxW5ZtA08pX86Y-EdZ_y-_Fnp-5My4tnjyVVzZ-FNpzMf4xC8K2LEBy6qeTV_0G00)
+    ![](http://www.plantuml.com/plantuml/png/fLFDIWCn4BxlK-IeXRv03r8yAoX5BoAItHsteTbaoKyLgWSHHV0YY1UVm6lFFa_zUGlJPBBDMdhHlUnalkIR-Rv9XjfGPMpDiu9JhSb8AWDgbX7tDJRdh21JoKh29IstjjVIsctlfaT6CL6H2im1fy9XrnbIxzeyvv0MOCASd1BgOppNk4D-7UWlQ9DI75fMJFx5C1e3vtzaS5j1dTC2o1uJr6bPjqaxsL8pmwJesXApfDgqmx4lmMFABQGTxqkXqsw9QgEgZV8LIiN4BzgA3GO-gmqrh8YaJdaT8XrQKMnA3GGjk4TZctZIGqmmSrPlmD6pNog7SWfAiHAYoqQ68DNgV4LJusdNOUnVhsRIMBnrOLb1NBPKBK6Wmu4H7lx9TC4WrhcgKkjPeiedY1d3yk_puGeHxNyTke1WFwZLbOMZffDR2gDA0xwIbW4keR06kqcV3EdthtPYtS77u_DY_f8b3oB58uotVHEC4muGsX2nw9y3UtukWyNztVVjs-VyFJdNsZpukdbTF3ratgYU0x0IfeSWIblp7m00)
 
 3.视频          
     冒泡排序法，因为交换次数过多，因此只将前两个妖精和任意其他两个妖精交换位置，然后排序。
     [![asciicast](https://asciinema.org/a/436825.svg)](https://asciinema.org/a/436825)      
     快速排序法，所有妖精都打乱了一遍
     [![asciicast](https://asciinema.org/a/436922.svg)](https://asciinema.org/a/436922)      
+    希尔排序法
+    [![asciicast](https://asciinema.org/a/437757.svg)](https://asciinema.org/a/437757)      
     
 ## 任务三
 
@@ -40,10 +42,12 @@
     作为Line的子类，多一个“每行人数”的成员变量，且拥有一个不一样的toString重载，可以按照方阵输出
 
 2.类关系图  
-    ![](http://www.plantuml.com/plantuml/png/dLEnpjCm4Dxp51xXb_uNo80gvYA1AbWGGavof5OTExBFfL9XG0W4Oa52BBm0h9qxy3HjuIrmx8lhK7Nvi_Xyt_cxxpuxCulSeEjaKKjkBLjeWs2s1VDVxoefQhRMec5Iy-RU_OkqzUNJz0ADK2rh0HzBhZpsjY3gXwwg9EGDXCBdBnWFCPth_Q5XJ_IlUPzJF76YNjsHmPU2USLhO7EXk5ToEQJrehKLABIQ3ZLcMNkjmhCFu3Ck7UIA7sbbSxNCfAXDKNL6kLg5JUhOKn2o5ZcAUYJratSnib6A4MkE46UX6aiowMI0X1Buihk2asV_JJdJQp16D32wZ3e6-QpULzXEr7k5etvxlfFUqPk9snR6RMORz-oRislIKyz1jRXCDQb9hA9BPJAksGi096po6BMrsspoa62uX64D-VZCc0tBX2uYf9dy60G-xIUvONXkBD1_a1XW0xL3KfF_5Epsziq3wbiUltmxxBuNzEAlmV6M2Q8nHspqnuCt0mRbuUE7l-z_dNRxx5ooiVppxiVXwwSY677Z0Uf4wNWZgH6Kf_tFu-VVnGnKuphv3m00)
+    ![](http://www.plantuml.com/plantuml/png/fLEnpjCm4Dxp51xXb_uNo80gvXy9LC6247AI8xNgs95zBfKA0q8W40iIOk45OEtSWQTf2s-14vzTXvQ5FqlEzzrzT_VPDxF83RfE5hNarhAvDWXcKp3_zQwIecOhBHecDM_kt3rpMny-TS_H2DMo5l2XvCfZhmkYlk-gIa9UG2Xy-epnqQQytYSDPw9_oVkSuf4JzV9M3FC5IFcV33uKp0jU0xiHYljPpcMoVcnj1Ggjfh94Bsl_5U7P1_09bmxoZXzePVDkcKbMcwpgX7Ar70-fOa_6wBN8KTIHr4_U1Sk6LenOSOGm2yLOQfCoHqWeWS-xotZKxAyfPte5neW6eigeWv7FwdKbKMEsxp3sRqztqhlmwkZOGZncid7FlZwf9Ztr3QWM5oac5GbHTAbCXd_s0W09cpndRUqcctnqC5p0y1_yj4lCZhy9NK2ePz9ZQF1nF_4DmtDZWJOfCS0QQeVKJRvMxFhwrJsgMnu-VTbllnPfPox3QI4km-4H44GgH2pAvy6h0ODo__xTxxS_ZjjTbfTKBd-z-RR__A4OTRho05KYTxYmL0ZAu-xxuUFFOWQgSPty0m00)
 
 3.视频          
     冒泡排序法，因为交换次数过多，因此只将前两个妖精和任意其他两个妖精交换位置，然后排序。
     [![asciicast](https://asciinema.org/a/436825.svg)](https://asciinema.org/a/436825)      
-    快速排序法，由于视频帧过多没法完全录制上传，因此只截取前半部分。在此视频中，可以看出后半部分已经完全排序。
-    [![asciicast](https://asciinema.org/a/436952.svg)](https://asciinema.org/a/436952)      
+    快速排序法
+    [![asciicast](https://asciinema.org/a/437750.svg)](https://asciinema.org/a/437750)      
+    希尔排序法，因为太长，只录了大半
+    [![asciicast](https://asciinema.org/a/437756.svg)](https://asciinema.org/a/437756)      

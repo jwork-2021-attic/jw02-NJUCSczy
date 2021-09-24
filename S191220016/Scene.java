@@ -10,8 +10,8 @@ public class Scene {
 
     public static void main(final String[] args) throws IOException {
 
-        //final Line line = new Line(256);
-        Line line=new Matrix(256, 16);
+        final Line line = new Line(256);
+        //Line line=new Matrix(256, 16);
         Monster.init_monsters(256);
         for(int i=0;i<256;i++){
             line.put(Monster.monsters[i], i);
@@ -20,7 +20,7 @@ public class Scene {
         final Boss theBoss = Boss.getTheBoss();
 
         //final Sorter sorter = new BubbleSorter();
-        final Sorter sorter = new QuickSorter();
+        final Sorter sorter = new ShellSorter();
 
         theBoss.setSorter(sorter);
 

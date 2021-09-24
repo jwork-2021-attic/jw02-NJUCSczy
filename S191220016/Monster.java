@@ -23,7 +23,7 @@ public class Monster implements Linable {
             monsters[i]=new Monster(i,(i>>4)<<4, ((i>>2) & 0xf)<<4 , (i&0xf)<<4);
         }
         Random rnd = new Random();
-        for (int i = 0; i <256; i++) {
+        for (int i = 0; i <2; i++) {
             int j=abs(rnd.nextInt()%256);
             Monster temp=monsters[i];
             monsters[i]=monsters[j];
